@@ -1,0 +1,20 @@
+.job-item {
+  background: white;
+  padding: 49px 32px 32px 32px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 44px;
+}
+
+.job-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.job-item-text-1 {
+  display: flex;
+  gap: 28px;
+}
