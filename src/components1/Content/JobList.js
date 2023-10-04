@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import data from "../../data.json";
-
 import styles from "./JobList.module.css";
 
 import JobItem from "./JobItem";
@@ -13,10 +11,10 @@ const JobList = (props) => {
   let jobContent = [];
 
   if (!isLoadMore) {
-    const numberWantToShow = 12;
+    const numberWantToShow = props.data.length >= 12 ? 12 : props.data.length;
     const newData = [];
     for (let i = 0; i < numberWantToShow; i++) {
-      newData.push(data[i]);
+      newData.push(props.data[i]);
     }
     jobContent = newData.map((item) => (
       <JobItem
@@ -27,7 +25,7 @@ const JobList = (props) => {
       />
     ));
   } else {
-    jobContent = data.map((item) => (
+    jobContent = props.data.map((item) => (
       <JobItem
         key={item.id}
         data={item}
@@ -49,7 +47,11 @@ const JobList = (props) => {
     <>
       <div className={styles.joblist}>{jobContent}</div>
       <div className={styles.buttonContainer}>
-        {!isLoadMore && <Button1 onClick={moreClickHandler}>Load More</Button1>}
+        {!isLoadMore && (
+          <Button1 onClick={moreClickHandler} className={styles.buttonload}>
+            Load More
+          </Button1>
+        )}
         {/* {isLoadMore && <Button1 onClick={lessClickHandler}>Load Less</Button1>} */}
       </div>
     </>

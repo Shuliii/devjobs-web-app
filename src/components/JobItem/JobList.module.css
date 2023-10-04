@@ -1,7 +1,14 @@
 .joblist {
   margin-top: 144px;
+  margin-bottom: 56px;
   padding-inline: 165px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px 60px;
+  gap: 65px 30px;
+}
+
+.buttonContainer {
+  display: grid;
+  place-content: center;
+  margin-bottom: 104px;
 }

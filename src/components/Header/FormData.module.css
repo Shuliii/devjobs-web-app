@@ -1,0 +1,91 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 80px;
+  width: 77.08vw;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* .input-control:nth-child(1) {
+  width: 41.71%;
+} */
+
+/* .input-control:nth-child(2) {
+  width: 27.03%;
+} */
+
+/* .input-control:nth-child(3) {
+  width: 31.26%;
+} */
+
+.input-control {
+  height: 100%;
+  width: 100%;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-block: 32px;
+  padding-inline: 23px;
+  gap: 16px;
+}
+
+.input-control:nth-child(1) {
+  padding-inline: 72px;
+}
+
+.input-control:nth-child(3) {
+  padding-inline: 32px;
+}
+
+.input-control:nth-child(2)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #979797;
+}
+
+.input-control:nth-child(3) {
+  position: relative;
+}
+
+.input-control:nth-child(3)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #979797;
+}
+
+.input-control input {
+  border: 0;
+  outline: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.input-control img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 23px;
+  width: 24px;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+
+.buttonsubmit {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}

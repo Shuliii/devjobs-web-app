@@ -1,0 +1,14 @@
+.jobDescriptionContainer {
+  display: grid;
+  place-content: center;
+  background: white;
+  max-width: 730px;
+  margin-top: 144px;
+  margin-inline: auto;
+  padding: 48px 43px 48px 48px;
+}
+
+/* .job-text-container {
+  display: flex;
+  justify-content: space-between;
+} */

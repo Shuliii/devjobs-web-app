@@ -32,6 +32,12 @@
   gap: 16px;
 }
 
+/* @media (max-width: 768px) {
+  .job-item-text {
+    gap: 13px;
+  }
+} */
+
 .job-item-text-1 {
   display: flex;
   gap: 28px;

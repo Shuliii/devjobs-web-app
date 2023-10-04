@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  background: white;
+  margin-top: 82px;
+}
+
+.footercontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 730px;
+  padding-block: 22px;
+  margin-inline: auto;
+}
+
+.footercontent div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerh3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.buttonfull {
+  padding: 16px 32px;
+}
+
+.button {
+  width: 100%;
+  padding: 16px 32px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    margin-top: 53px;
+  }
+
+  .footercontent {
+    width: 100%;
+    padding: 23px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footercontent {
+    padding: 25px 24px 23px 24px;
+  }
+}

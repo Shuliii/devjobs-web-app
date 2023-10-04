@@ -10,6 +10,16 @@
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    padding: 42px 40px 86px 39px;
+  }
+}
+
+.header img {
+  cursor: pointer;
+}
+
 .switch-theme {
   display: flex;
   align-items: center;
@@ -78,10 +88,4 @@ input:checked + .slider::before {
 
 input:hover + .slider::before {
   background-color: #5964e0;
-}
-
-.form {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
 }
